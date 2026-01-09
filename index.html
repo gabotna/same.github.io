@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Comisiones de Arte</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="img/deco1.png" alt="" class="sticker sticker-top-left">
+    
+    <img src="img/deco2.png" alt="" class="sticker sticker-bottom-right">
+
+    
+
+    <header>
+        <h1>SAME</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#precios">Precios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <button id="boton-tema" class="btn-tema">🌙</button>
+        </nav>
+    </header>
+
+    <section id="inicio">
+        <h2>Bienvenido a mi portafolio</h2>
+        <p>Hola, soy ilustrador digital especializado en [Tu Estilo, ej: Anime/Realismo].</p>
+        <p>Estado de comisiones: <strong>ABIERTAS</strong></p>
+        <a href="#contacto" class="boton-cta">Pedir una comisión</a>
+    </section>
+
+    <section id="galeria">
+        <h2>Mis Trabajos Recientes</h2>
+        <<section id="galeria">
+    <h2>Mis Trabajos Recientes</h2>
+    
+    <div class="galeria-grid">
+        <div class="item-galeria">
+            <img src="img/imagen1.png" alt="Ilustración de personaje anime">
+        </div>
+        <div class="item-galeria">
+            <img src="img/imagen2.png" alt="Diseño de fondo de paisaje">
+        </div>
+        <div class="item-galeria">
+            <img src="img/imagen3.png" alt="Comisión full body">
+        </div>
+    </div>
+</section>
+    </section>
+
+    <section id="precios">
+        <h2>Tabla de Precios</h2>
+        <ul>
+            <li><strong>Sketch</strong><br>$5 USD</li>
+            <li><strong>Lineart</strong><br>$10 USD</li>
+            <li><strong>Flatcolor</strong><br>$15 USD</li>
+            <li><strong>Full Render</strong><br>$20 USD</li>
+            <li><strong>Chibi</strong><br>$10 USD</li>
+            <li><strong>Extra Character</strong><br>+$5 USD</li>
+        </ul>
+        <p><em>*Pagos vía PayPal.</em></p>
+    </section>
+
+    <section id="contacto">
+        
+        <h2>Trabajemos juntos</h2>
+        <p>¿Tienes una idea en mente? ¡Escríbeme por cualquiera de estos medios!</p>
+        
+        <div class="redes-container">
+            <a href="https://www.instagram.com/s4m3art/" target="_blank" class="btn-social instagram">
+                Instagram
+            </a>
+
+            <a href="https://x.com/s4m3art" target="_blank" class="btn-social twitter">
+                Twitter / X
+            </a>
+
+            <a href="mailto:srningensame@gmail.com" class="btn-social correo">
+    Correo
+</a>
+        </div>
+    
+
+    <img src="img/chibi_deco.png" alt="" class="sticker sticker-footer"><footer>
+        <p>&copy; 2025 SAME. Todos los derechos reservados.</p>
+    </footer>
+
+<script>
+        const boton = document.getElementById('boton-tema');
+        const cuerpo = document.body;
+
+        boton.addEventListener('click', () => {
+            // 1. Alternar la clase 'dark-mode' en el cuerpo
+            cuerpo.classList.toggle('dark-mode');
+
+            // 2. Cambiar el icono del botón (Sol / Luna)
+            if (cuerpo.classList.contains('dark-mode')) {
+                boton.textContent = '☀️'; // Si es oscuro, muestra el sol
+            } else {
+                boton.textContent = '🌙'; // Si es claro, muestra la luna
+            }
+        });
+    </script>
+  </body>
+</html>
